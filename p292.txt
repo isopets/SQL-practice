@@ -1,0 +1,8 @@
+
+-- p292 ストアドファンクション
+delimiter //
+create function personsama(username varchar(50))
+returns varchar(70)
+begin
+return concat(username, '様');
+end //

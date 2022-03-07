@@ -1,0 +1,2 @@
+select * from uriage
+where charge > (select AVG(charge) from uriage);

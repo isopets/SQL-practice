@@ -1,0 +1,12 @@
+-- p283 リスト12-6
+DELIMITER //
+
+CREATE PROCEDURE uriagepack()
+BEGIN
+INSERT INTO shohin(idsh, product, price, category) 
+VALUES ('m132004', '万年筆D', 3000, '万年筆');
+INSERT INTO uriage (idur, company, charge, state, area)
+VALUES (2017120001, 'シリウス社', 6000, '東京都', '世田谷区');
+INSERT INTO uriage(idur, company, charge, state, area)
+VALUES (2017120002, 'ベガ社', 12000, '東京都', '世田谷区');
+END //

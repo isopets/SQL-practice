@@ -1,0 +1,7 @@
+--p266 リスト11-5
+start transaction;
+INSERT INTO shukko (idko, taiou, outnum, outdate) VALUES
+(20179001, 8001, 30, '2017/09/25');
+--p266 リスト11-4
+update zaiko set stock = stock - 30 where idzai = 8001;
+commit; 

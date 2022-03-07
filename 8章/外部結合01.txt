@@ -1,0 +1,3 @@
+SELECT tbl_likeanimal.name, tbl_likeanimal.class, tbl_whiteanimal.eyecol
+FROM tbl_likeanimal LEFT OUTER JOIN tbl_whiteanimal
+ON tbl_likeanimal.name = tbl_whiteanimal.name;

@@ -1,0 +1,8 @@
+insert into uriage(idur, company, dharge, salesdate, state, area)
+values(1, 'シリウス社', 1000, null, '東京都', '世田谷区');
+
+
+select : from uriage where salesdate = null
+select * from uriage where salesdate is null;
+select * from uriage where salesdate <=> null;
+select * from uriage where salesdate is not null;

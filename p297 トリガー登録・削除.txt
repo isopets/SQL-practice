@@ -1,0 +1,13 @@
+-- p296　トリガー
+delimiter //
+create trigger jushotrigger
+after delete on jusho for each row
+begin
+update uriage set charge = 0 where company = old.company;
+end;
+
+delete from jusho copany = 'ベガ社';
+
+// これを実行するとjushoテーブルから'ベガ社'が削除される
+//上記SQLをトリガーとして
+//uriageテーブルの'シリウス社'の売上金額が０になればOK

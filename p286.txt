@@ -1,0 +1,11 @@
+-- p286 リスト12-6
+DELIMITER //
+
+create procedure uriagekaishabetsu(kaisha varchar(50))
+begin
+select * from uriage where company = kaisha;
+end //
+
+call uriagekaishabetsu('シリウス社');
+call uriagekaishabetsu('ペテルギウス社');
+call uriagekaishabetsu('ベガ社');
